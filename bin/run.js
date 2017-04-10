@@ -5,10 +5,10 @@ const service = require('../server/service');
 const http = require('http');
 const server = http.createServer(service);
 
-const witToken = 'HJJTFOEP6EJRW3MFJHPO4OFEXFNAEVEN';
+const witToken = 'YOUR TOKEN HERE';
 const witClient = require('../server/witClient')(witToken);
 
-const slackToken = 'xoxb-161511942759-SS8HT9uMlBT8V9qOt9dS0ulP';
+const slackToken = 'YOUR TOKEN HERE';
 const slackLogLevel = 'verbose';
 
 const serviceRegistry = service.get('serviceRegistry');
